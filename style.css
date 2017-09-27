@@ -96,16 +96,20 @@ td {
 hr {
   border: 0.5px solid #eee;
 }
-#my-work-gallery{
+.gallery{
+  background-color: lightyellow;
   padding-top: 25px;
   text-align: center;
   border: 0.5px solid #eee;
   width: 100%;
 }
+.gallery p{
+  text-align: left;
+}
 .item {
   position: relative;
-  max-width: 32%;
-  height: 300px;
+  max-width: 40%;
+  height: 200px;
   display: inline-block;
   margin-bottom: 10px;
   vertical-align: text-top;
@@ -120,6 +124,7 @@ hr {
 }
 */
 .item-info {
+  overflow: auto;
   display: inline-block;
   background-color: rgba(255,255,255,.8);
   position: relative;
@@ -129,6 +134,11 @@ hr {
   padding: 10px 10px;
 }
 
+#my-work .item{
+  max-width: 32%;
+  height: 250px;
+}
+}
 /*
 .item:hover .item-info {
   display: block;
